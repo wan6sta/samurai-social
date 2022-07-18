@@ -1,17 +1,18 @@
 import {useState} from 'react'
 import styles from './header.module.scss'
 import {Button, Typography} from '@mui/material'
-import avatar from '../../assets/images/avatar-svgrepo-com.svg'
+import avatar from '../../assets/images/icons8-user-80.png'
 
 const Header = () => {
   const [isAuth, setIsAuth] = useState(true)
 
   return <div className={styles.header}>
-    <div>
+    <div className={styles.logo}>
       <Typography variant="h5" gutterBottom component="div">
         Samurai social
       </Typography>
     </div>
+
     <div className={styles.userInfoWrap}>
       {isAuth
         ? <div className={styles.userInfo}>

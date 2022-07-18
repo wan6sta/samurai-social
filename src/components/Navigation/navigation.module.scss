@@ -1,0 +1,21 @@
+.nav {
+ display: flex;
+ flex-direction: column;
+ width: 200px;
+ align-items: center;
+ margin-right: 10px;
+ height: 120px;
+ background-color: rgba(65, 81, 255, 0.06);
+ a {
+  text-decoration: none;
+ }
+ button {
+  width: 200px;
+  height: 40px;
+  padding: 10px;
+ }
+}
+
+.activeLink {
+ background-color: rgba(40, 82, 255, 0.11);
+}
